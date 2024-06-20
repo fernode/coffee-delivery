@@ -1,5 +1,5 @@
 import { MapPin, ShoppingCart } from '@phosphor-icons/react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom' 
 
 
 import { Aside, Container } from './styles'
@@ -15,7 +15,7 @@ export function Header() {
       <Aside>
         <div>
           <MapPin size={22} weight="fill" />
-          <span>Porto Alegre, RS</span>
+          <span>São Paulo, SP</span>
         </div>
 
         <Link to={`cart`} >

@@ -16,9 +16,8 @@ module.exports = {
     ],
     '@stylistic/semi': ['warn', 'never'],
     "indent": ["error", 2, { "flatTernaryExpressions": true }],
-    "@stylistic/no-multi-spaces": "error",
     "@stylistic/no-confusing-arrow": ["error", {"onlyOneSimpleParam": true}],
-    " @stylistic/no-multi-spaces": ["error", { ignoreEOLComments: false }],
+    "@stylistic/no-multi-spaces": ["error", { ignoreEOLComments: false }],
     "@stylistic/no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0 }]
   },
 }
