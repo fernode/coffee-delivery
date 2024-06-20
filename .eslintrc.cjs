@@ -14,6 +14,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    '@stylistic/semi': ['warn', 'never']
+    '@stylistic/semi': ['warn', 'never'],
+    "indent": ["error", 2, { "flatTernaryExpressions": true }]
   },
 }

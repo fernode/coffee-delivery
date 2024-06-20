@@ -10,11 +10,11 @@ interface TypographyTitleProps extends HTMLAttributes<HTMLHeadingElement> {
 }
 
 const sizeStyles = {
-    titleXL: css`font-size: 3rem; font-weight: 800; line-height: 130%`,
-    titleL: css`font-size: 2rem; font-weight: 800; line-height: 130%`,
-    titleM: css`font-size: 1.5rem; font-weight: 800; line-height: 130%`,
-    titleS: css`font-size: 1.25rem; font-weight: 400; line-height: 130%`,
-    titleXs: css`font-size: 1.125rem; font-weight: 400; line-height: 130%`,
+  titleXL: css`font-size: 3rem; font-weight: 800; line-height: 130%`, 
+  titleL: css`font-size: 2rem; font-weight: 800; line-height: 130%`,
+  titleM: css`font-size: 1.5rem; font-weight: 800; line-height: 130%`,
+  titleS: css`font-size: 1.25rem; font-weight: 400; line-height: 130%`, 
+  titleXs: css`font-size: 1.125rem; font-weight: 400; line-height: 130%`,
 }
 
 const StyledTypography = styled.h1<TypographyTitleProps>`
@@ -25,7 +25,7 @@ font-optical-sizing: auto;
 `
 
 export const TypographyTitle: React.FC<TypographyTitleProps> = ({ variant, size, children, ...props }) => (
-    <StyledTypography as={variant} size={size} {...props} variant={variant}>
-        {children}
-    </StyledTypography>
+  <StyledTypography as={variant} size={size} {...props} variant={variant}>
+    {children}
+  </StyledTypography>
 )
