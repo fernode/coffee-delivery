@@ -15,6 +15,9 @@ module.exports = {
       { allowConstantExport: true },
     ],
     '@stylistic/semi': ['warn', 'never'],
-    "indent": ["error", 2, { "flatTernaryExpressions": true }]
+    "indent": ["error", 2, { "flatTernaryExpressions": true }],
+    "@stylistic/no-multi-spaces": "error",
+    "@stylistic/no-multiple-empty-lines": "error",
+    "@stylistic/no-confusing-arrow": ["error", {"onlyOneSimpleParam": true}]
   },
 }
