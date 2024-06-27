@@ -2,6 +2,9 @@ import { createGlobalStyle } from "styled-components"
 import {mixins} from "./mixins.ts"
 
 export const GlobalStyle = createGlobalStyle`
+html {
+     font-size: 62.5%; /* 10px/16px = 62.5% */
+}
  * {
      margin: 0;
      padding: 0;
