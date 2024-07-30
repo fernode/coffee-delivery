@@ -56,4 +56,23 @@ export const ChipContainer = styled.div`
 export const CartInfos = styled.div`
   display: flex;
   align-items: center;
+  padding-bottom: 3rem;
+`
+
+export const PriceText = styled.data`
+  font-size: ${mixins.fonts.textM};
+  color: ${(props) => props.theme.colors["base-text"]};
+  font-size: ${mixins.fonts.titleM};
+  margin-right: 2.3rem;
+`
+
+export const IconBox = styled.div`
+  background-color: ${(props) => props.theme.colors["purple-dark"]};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.8rem;
+  height: 3.8rem;
+  margin-left: 1rem;
+  border-radius: 6px;
 `
