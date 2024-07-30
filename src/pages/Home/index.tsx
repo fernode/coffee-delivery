@@ -2,12 +2,13 @@ import {Coffee, Package, ShoppingCart, Timer} from "@phosphor-icons/react"
 
 import * as S from './styles.ts'
 import {defaultTheme} from "../../styles/theme/defaultTheme.ts"
-
+import {coffees} from "../../../data.json"
+import {CoffeeCard} from "./components/CoffeeCard"
 
 export function Home() {
   return (
     <main>
-      <S.Container>
+      <S.HeroContainer>
         <div>
           <S.Infos>
             <h1>Encontre o café perfeito para qualquer hora do dia</h1>
@@ -36,7 +37,20 @@ export function Home() {
           </S.FeatureList>
         </div>
         <img src="/images/hero.svg" alt="Café do Coffee Delivery"/>
-      </S.Container>
+      </S.HeroContainer>
+
+      <S.ProductsSection>
+        <h2>Nossos cafés</h2>
+
+        <S.ProductsList>
+          {coffees.map((coffee, index) => (
+            <CoffeeCard key={index} description={coffee.description} title={coffee.title}
+              price={Number(coffee.price)} src={coffee.image}
+              tags={coffee.tags}
+            />
+          ))}
+        </S.ProductsList>
+      </S.ProductsSection>
     </main>
   )
 }
